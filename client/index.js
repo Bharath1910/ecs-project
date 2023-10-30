@@ -4,7 +4,7 @@ const finger_3 = document.getElementById("finger_3");
 const finger_4 = document.getElementById("finger_4");
 const finger_5 = document.getElementById("finger_5");
 
-fetch("http://ecs.bharathshanmugam.dev/")
+fetch("http://143.110.254.118:3001/")
 	.then(response => response.json())
 	.then(data => {
 		finger_1.innerText = data.finger_one;
@@ -15,4 +15,4 @@ fetch("http://ecs.bharathshanmugam.dev/")
 	});
 
 
-window.setInterval(() => {window.location.reload()}, 10000);
+window.setInterval(() => {window.location.reload()}, 3000);
